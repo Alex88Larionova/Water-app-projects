@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+--main-background-color: rgb(66, 155, 250);
+--water-background-color: rgb(90, 166, 248);
+--border-color: rgb(0, 100, 206);
+--text-color: rgb(0, 100, 206);
+}
+
+body {
+  background-color: var(--main-background-color);
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+overflow: hidden;
+}
+
+.drink_water {
+ color: white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.drink_water h1 {
+  margin-bottom: 10px;
+}
+
+.drink_water p {
+  margin: 0px 0px 20px 0px;
+}
+
+.bottle {
+  background-color: white;
+  width: 120px;
+  min-height: 200px;
+  max-height: 200px;
+  border-radius: 0px 0px 40px 40px;
+  border: 3px solid var(--border-color);
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.remainded {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  transition: 0.3s ease;
+}
+
+.remainded_litres {
+  color: var(--border-color);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.glasses {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.glasses p{
+  margin-bottom: 10px;
+}
+
+.glasses_items {
+  height: 50%;
+  width: 200px;
+  display: grid;
+  grid-template-rows: repeat(2, 80px);
+  grid-template-columns: repeat(4, 50px);
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.glass {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  color: var(--text-color);
+  font-size: 14px;
+  width: 35px;
+  height: 70px;
+  border-radius: 0px 0px 15px 15px;
+  border: 3px solid var(--border-color);
+  transition: 0.4s ease-in;
+}
+
+.glass.full {
+  background-color: var(--water-background-color);
+}
+
+.glass.hidden {
+  visibility: hidden;
+}
+
+.goal {
+  background-color: var(--water-background-color);
+  color: white;
+  font-size: 16px;
+  border: 3px solid var(--border-color);
+  width: 30px;
+  height: 30px;
+  border-radius: 30%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.drink_water p {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  justify-content: center;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.drinked {
+  background-color: var(--water-background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  height: 0;
+  transition: 0.3s ease;
+}
+
+.drinked-percentage{
+  height: auto;
+  color: white;
+    font-size: 26px;
+    font-weight: 800;
+}
